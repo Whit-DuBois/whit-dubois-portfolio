@@ -1,4 +1,10 @@
-whit-dubois-portfolio
+Whit DuBois' Portfolio
 =====================
 
-Whit DuBois' personal portfolio
+Technoloiges:
+AngularJS
+HTML5
+CSS3
+jQuery
+PHP
+InstagramAPI
