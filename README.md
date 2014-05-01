@@ -1,7 +1,7 @@
 Whit DuBois' Portfolio
 =====================
 
-Technoloiges: <br/>
+Technologies: <br/>
 AngularJS <br/>
 HTML5 <br/>
 CSS3 <br/>
