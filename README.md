@@ -1,10 +1,10 @@
 Whit DuBois' Portfolio
 =====================
 
-Technoloiges:
-AngularJS
-HTML5
-CSS3
-jQuery
-PHP
+Technoloiges: <br/>
+AngularJS <br/>
+HTML5 <br/>
+CSS3 <br/>
+jQuery <br/>
+PHP <br/>
 InstagramAPI
