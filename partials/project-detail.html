@@ -1,0 +1,18 @@
+<!-- PROJECT DETAILS -->		
+<section class="container project-details-container">
+	<article class="ten columns project-detail-img">
+		<img ng-src="{{project.images[0]}}">
+		<iframe data-ng-show="project.url" data-ng-src="{{project.url}}" frameborder="0" allowfullscreen></iframe>
+	</article>
+	<article class="five columns project-description">
+		<h2>{{project.name}}</h2>
+		<p>{{project.description}}</p>
+		<h4>Technology</h4>
+		<ul>
+			<li >{{project.tech[0]}}</li>
+			<li >{{project.tech[1]}}</li>
+			<li >{{project.tech[3]}}</li>
+		</ul>
+	</article>
+</section>
+<!-- END: PROJECT DETAILS -->

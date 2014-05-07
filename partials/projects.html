@@ -1,0 +1,38 @@
+<section class="projects-container container">
+	<!-- FIXED NAV -->
+	<!-- <header class="sixteen columns fixed-header">
+				<a href="#/"><h2><whit></whit></h2></a>
+				<nav class="fixed-nav">
+					<ul>
+						<li><a href="#/">Home</a></li>
+						<li><a href="#/projects">Projects</a></li>
+						<li><a href="#/contact">Contact</a></li>
+					</ul>
+				</nav>
+	</header> -->
+	<!-- END: FIXED NAV -->
+
+	<!-- SEARCH -->
+	<aside class="sixteen columns utility-search">
+		Search  <input data-ng-model="query" placeholder="i.e websites, videos, photos">
+		<!-- <select ng-model="orderProp">
+		    <option value="name">Alphabetical</option>
+		    <option value="-category">Category</option>
+		    <option value="date">Date</option>
+		 </select> -->
+	</aside>
+	<!-- END: SEACH-->
+
+	<!-- PROJECTS -->
+	<article class="project-contain columns" data-ng-repeat="project in projects | orderBy:orderProp | filter:query">
+			<div class="img-container">
+				<a href="#/projects/{{project.id}}"><img data-ng-src="{{project.pic}}"></a>
+			</div>
+			<h3 class="project-name">
+				<a href="#/project/{{project.id}}">{{project.name}}</a>
+			</h3>
+			<div>{{project.description}}</div>
+			<div>{{project.category}}</div>
+	</article>
+	<!-- END: PROJECTS -->
+</section>

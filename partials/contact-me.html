@@ -1,0 +1,33 @@
+
+    <!-- CONTACT FORM -->
+    <div class="sixteen columns contact-container">
+    	<h2>Contact Me</h2>
+    	<p class="required">* = Required</p>
+    
+    	<div id="messages" data-ng-show="message">{{message}}</div>
+    	
+    	<form name="contact" ng-controller="contactCtrl" id="contactForm" class="contact" method="post" novalidate>
+    
+    	    <label>Name*
+            	<input type="text" name="name" class="form-control" data-ng-model="user.name" placeholder="Joe Blow" required>
+    	    	<!-- <p data-ng-show="contact.name.$invalid && !contact.name.$pristine" class="help-block">You name is required.</p> -->
+    	    </label>
+    
+    	    <label ng-class="{ 'has-error' : contact.email.$invalid && !contact.email.$pristine }">eMail*
+            	<input type="email" name="email" class="form-control" data-ng-model="user.email" placeholder="joe84@email.com"     required>
+    	    	<!-- <p data-ng-show="contact.email.$invalid && !contact.email.$pristine" class="help-block">You email is required.    </p> -->
+    	    </label>
+    
+    	    <label ng-class="{ 'has-error' : contact.comment.$invalid && !contact.comment.$pristine }">Comment*
+            	<textarea name="comment" class="form-control" ng-model="user.comments" required></textarea>
+            	<!-- <p data-ng-show="contact.comment.$invalid && !contact.comment.$pristine" class="help-block">You comment is     required.</p> -->
+    	    </label>
+    
+    		<p>
+    			<button ng-click="reset()">Reset</button>
+            	<button type="submit" ng-click="processForm()">Submit</button>
+            </p>
+    	</form>
+    </div>
+    <!-- END: CONTACT FORM -->
+

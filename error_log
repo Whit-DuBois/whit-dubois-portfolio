@@ -1,0 +1,17 @@
+[10-Apr-2014 13:56:49] PHP Parse error:  syntax error, unexpected ')', expecting T_STRING or T_VARIABLE or '$' in /home/wdadmin/public_html/whit-dubois/app/process.php on line 9
+[10-Apr-2014 13:56:50] PHP Parse error:  syntax error, unexpected ')', expecting T_STRING or T_VARIABLE or '$' in /home/wdadmin/public_html/whit-dubois/app/process.php on line 9
+[10-Apr-2014 13:57:00] PHP Parse error:  syntax error, unexpected ')', expecting T_STRING or T_VARIABLE or '$' in /home/wdadmin/public_html/whit-dubois/app/process.php on line 9
+[10-Apr-2014 13:57:00] PHP Parse error:  syntax error, unexpected ')', expecting T_STRING or T_VARIABLE or '$' in /home/wdadmin/public_html/whit-dubois/app/process.php on line 9
+[10-Apr-2014 13:57:39] PHP Parse error:  syntax error, unexpected ')', expecting T_STRING or T_VARIABLE or '$' in /home/wdadmin/public_html/whit-dubois/app/process.php on line 9
+[10-Apr-2014 13:57:39] PHP Parse error:  syntax error, unexpected ')', expecting T_STRING or T_VARIABLE or '$' in /home/wdadmin/public_html/whit-dubois/app/process.php on line 9
+[10-Apr-2014 13:59:55] PHP Parse error:  syntax error, unexpected '[', expecting T_PAAMAYIM_NEKUDOTAYIM in /home/wdadmin/public_html/whit-dubois/app/process.php on line 6
+[10-Apr-2014 13:59:55] PHP Parse error:  syntax error, unexpected '[', expecting T_PAAMAYIM_NEKUDOTAYIM in /home/wdadmin/public_html/whit-dubois/app/process.php on line 6
+[10-Apr-2014 14:00:28] PHP Parse error:  syntax error, unexpected '[', expecting T_PAAMAYIM_NEKUDOTAYIM in /home/wdadmin/public_html/whit-dubois/app/process.php on line 6
+[10-Apr-2014 14:00:28] PHP Parse error:  syntax error, unexpected '[', expecting T_PAAMAYIM_NEKUDOTAYIM in /home/wdadmin/public_html/whit-dubois/app/process.php on line 6
+[14-Apr-2014 11:21:29] PHP Parse error:  syntax error, unexpected ')', expecting T_STRING or T_VARIABLE or '$' in /home/wdadmin/public_html/whit-dubois/app/process.php on line 9
+[14-Apr-2014 11:21:29] PHP Parse error:  syntax error, unexpected ')', expecting T_STRING or T_VARIABLE or '$' in /home/wdadmin/public_html/whit-dubois/app/process.php on line 9
+[14-Apr-2014 11:25:30] PHP Parse error:  syntax error, unexpected '}' in /home/wdadmin/public_html/whit-dubois/app/send-mail.php on line 14
+[14-Apr-2014 11:26:54] PHP Parse error:  syntax error, unexpected '}' in /home/wdadmin/public_html/whit-dubois/app/send-mail.php on line 14
+[14-Apr-2014 11:28:32] PHP Parse error:  syntax error, unexpected '}' in /home/wdadmin/public_html/whit-dubois/app/send-mail.php on line 14
+[14-Apr-2014 11:30:35] PHP Warning:  filter_var() expects parameter 2 to be long, string given in /home/wdadmin/public_html/whit-dubois/app/send-mail.php on line 8
+[14-Apr-2014 13:23:30] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/wdadmin/public_html/whit-dubois/app/send-mail.php:19) in /home/wdadmin/public_html/whit-dubois/app/send-mail.php on line 23

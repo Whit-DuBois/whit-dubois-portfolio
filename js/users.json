@@ -1,0 +1,19 @@
+[
+    {
+     	"name": "Roberto",
+     	"pic": "img/roberto.png",
+     	"lunch": "Meat"
+    },{
+  		"name": "Whitney",
+     	"pic": "img/whitney.jpg",
+     	"lunch": "Whatever"
+    },{
+     	"name": "Charlie",
+     	"pic": "img/charlie.png",
+     	"lunch": "Tofu"
+    },{
+     	"name": "Katie",
+     	"pic": "img/katie.jpg",
+     	"lunch": "Burger"
+     }
+]

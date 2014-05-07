@@ -1,0 +1,11 @@
+<section class="welcome-container">
+	<article id="photos" class="columns">
+		<div class="welcome-contain" ng-repeat="p in pics" class="showCaption">
+			<a  href="{{p.link}}" class="showCaption" target="_blank"><img ng-src="{{p.images.low_resolution.url}}" /><p class="show-caption">{{p.caption.text}}</p></a>
+		</div>
+	</article>
+</section>
+
+
+
+
