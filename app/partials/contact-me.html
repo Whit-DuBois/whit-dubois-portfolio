@@ -1,0 +1,41 @@
+<header class="sixteen columns main-header">
+			<a href="#/"><h1>Whit DuBois</h1></a>
+			<nav class="main-nav">
+				<ul>
+					<li><a href="#/">Home</a></li>
+					<li><a href="#/projects">Projects</a></li>
+					<li><a href="#/contact">Contact</a></li>
+					<!-- <li><a href="#/contact">Contact</a></li> -->
+				</ul>
+			</nav>
+		</header>
+<!-- CONTACT FORM -->
+<div class="sixteen columns">
+	<form name="form" class="contact" method="post" novalidate>
+		<fieldset>
+			<label> Name 
+				<input type="text" data-ng-model="user.name" name="name" required>
+			</label>
+			<label> eMail 
+				<input type="text" data-ng-model="user.email" name="email" required>
+			</label>
+			<label>Company 
+				<input type="text" data-ng-model="user.company" name="company">
+			</label>
+			<label>Comment
+				<textarea name="textarea" placeholder="Comment here..." rows="10" cols="" data-ng-model="user.comment" name="comment" required></textarea>
+			</label>
+			<label>
+				<input type="submit" name="submit" value="send">
+			</label>
+			<p>
+				<!-- <button data-ng-click="resest()">Reset</button>
+				<button data-ng-click="update(user)" type="submit" name="submit" value="send">Send</button> -->
+			</p>
+		</fieldset>
+	</form>
+	<pre>form = {{user | json}}</pre>
+	<pre>master = {{master | json}}</pre>
+</div>
+
+<!-- END: CONTACT FORM -->
