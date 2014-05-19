@@ -4,7 +4,8 @@ var myApp = angular.module('myApp', [
 	'myAppControllers',
 	'ngResource',
 	'myServices',
-	'myDirectives'
+	'myDirectives',
+	'ngRoute'
 ]);
 
 myApp.config(['$routeProvider',

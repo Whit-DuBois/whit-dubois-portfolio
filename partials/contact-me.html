@@ -3,24 +3,31 @@
     <div class="sixteen columns contact-container">
     	<h2>Contact Me</h2>
     	<p class="required">* = Required</p>
-    
-    	<div id="messages" data-ng-show="message">{{message}}</div>
     	
-    	<form name="contact" ng-controller="contactCtrl" id="contactForm" class="contact" method="post" novalidate>
+    	<form name="contact" id="contact" class="contact" method="post" novalidate>
     
     	    <label>Name*
-            	<input type="text" name="name" class="form-control" data-ng-model="user.name" placeholder="Joe Blow" required>
-    	    	<!-- <p data-ng-show="contact.name.$invalid && !contact.name.$pristine" class="help-block">You name is required.</p> -->
+            	<input type="text" name="uName" ng-model="user.name" required>
+                <div class="show-error">
+    	    	  <p data-ng-show="contact.uName.$invalid && contact.submitted">You name is required.</p>
+                </div>
     	    </label>
     
-    	    <label ng-class="{ 'has-error' : contact.email.$invalid && !contact.email.$pristine }">eMail*
-            	<input type="email" name="email" class="form-control" data-ng-model="user.email" placeholder="joe84@email.com"     required>
-    	    	<!-- <p data-ng-show="contact.email.$invalid && !contact.email.$pristine" class="help-block">You email is required.    </p> -->
+    	    <label>eMail*
+            	<input type="email" name="uEmail" data-ng-model="user.email" required>
+                <div class="show-error">
+                    <div ng-show="contact.uEmail.$invalid && contact.submitted">
+                        <p data-ng-show="contact.uEmail.$error.required">You email is required.</p>
+                        <p data-ng-show="contact.uEmail.$error.email">You email is not valid.</p>
+                    </div>
+                </div>
     	    </label>
     
-    	    <label ng-class="{ 'has-error' : contact.comment.$invalid && !contact.comment.$pristine }">Comment*
-            	<textarea name="comment" class="form-control" ng-model="user.comments" required></textarea>
-            	<!-- <p data-ng-show="contact.comment.$invalid && !contact.comment.$pristine" class="help-block">You comment is     required.</p> -->
+    	    <label>Comment*
+            	<textarea name="comment" data-ng-model="user.comments" required></textarea>
+                <div class="show-error">
+            	   <p data-ng-show="contact.comment.$invalid && contact.submitted">You comment is required.</p>
+                </div>
     	    </label>
     
     		<p>

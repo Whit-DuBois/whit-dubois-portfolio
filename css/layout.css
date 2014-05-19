@@ -319,7 +319,7 @@ button + button{
 			padding: 0px;
 		}
 		nav.main-nav{
-			float: none;
+			position: inherit;
 		}
 		.main-nav ul li{
 			display: inline;
