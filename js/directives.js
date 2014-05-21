@@ -32,6 +32,27 @@ myDirective.directive('showCaption', function () {
             $('#photos a').mouseleave(function () {
                 $(this).parent().find('.show-caption').hide('fast');
             });
+
+            function fixDiv() {
+                var $div = $("#stickTop");
+                if ($(window).scrollTop() > $div.data("top")) { 
+                    $('#stickTop').css({'position': 'fixed', 'top': '0'});
+                    $('#stickTop h2').addClass('stick'); 
+                }
+                else {
+                    $('#stickTop').css({'position': 'absolute', 'top': 'auto'});
+                }
+            }
+
+            $("#stickTop").data("top", $("#stickTop").offset().top); // set original position on load
+            $(window).scroll(fixDiv);
         }
     };
 });
+
+// myDirective.directive('scrollTop', function(){
+//     return {
+//         restrict: 'C'.
+//         link: function (scope, element)
+//     }
+// })

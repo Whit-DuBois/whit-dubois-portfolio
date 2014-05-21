@@ -108,9 +108,35 @@ header h1{
    	column-gap:           0px;
    	overflow: hidden;
 }
-/*.welcome-container #photos a{
-	z-index: -9999;
-}*/
+	@media (max-width: 1224px) {
+	  .welcome-container #photos {
+	  -moz-column-count:    4;
+	  -webkit-column-count: 4;
+	  column-count:         4;
+	  }
+	}
+	@media (max-width: 918px) {
+	  .welcome-container #photos {
+	  -moz-column-count:    3;
+	  -webkit-column-count: 3;
+	  column-count:         3;
+	  }
+	}
+	@media (max-width: 612px) {
+	  .welcome-container #photos {
+	  -moz-column-count:    2;
+	  -webkit-column-count: 2;
+	  column-count:         2;
+	  }
+	}
+	@media (max-width: 320px) {
+	  .welcome-container #photos {
+	  -moz-column-count:    1;
+	  -webkit-column-count: 1;
+	  column-count:         1;
+	  }
+	}
+
 .welcome-container #photos p{
 	text-align: center;
 	text-transform: uppercase;
@@ -137,40 +163,27 @@ header h1{
   	height: auto;
   	margin-bottom: -5px;
 }
-
-
-@media (max-width: 1224px) {
-  .welcome-container #photos {
-  -moz-column-count:    4;
-  -webkit-column-count: 4;
-  column-count:         4;
-  }
+.welcome-container aside{
+	position: fixed;
+	z-index: 999;
+	background:rgba(0,0,0, 0.4);
+	padding: 5px 15px 5px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
 }
-@media (max-width: 918px) {
-  .welcome-container #photos {
-  -moz-column-count:    3;
-  -webkit-column-count: 3;
-  column-count:         3;
-  }
+.welcome-container aside p{
+	margin: 0;
+	padding: 0;
 }
-@media (max-width: 612px) {
-  .welcome-container #photos {
-  -moz-column-count:    2;
-  -webkit-column-count: 2;
-  column-count:         2;
-  }
+.welcome-container aside h2{
+	margin: 0;
+	color: #FFFFFF;
+	text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.91);
+	/*font-size: 30px;*/
 }
-@media (max-width: 320px) {
-  .welcome-container #photos {
-  -moz-column-count:    1;
-  -webkit-column-count: 1;
-  column-count:         1;
-  }
+.stick h2{
+	color: blue;
 }
-
-
-
-
 .bg-img{
 	min-width:auto;
     min-height:80%;
@@ -376,6 +389,9 @@ button + button{
 		}
 		hr{
 			margin-bottom: 10px 0 25px;
+		}
+		.welcome-container aside h2{
+			font-size: 30px;
 		}
 	}
 
