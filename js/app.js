@@ -27,6 +27,14 @@ myApp.config(['$routeProvider',
 				templateUrl: 'partials/contact-me.html',
 				controller: 'contactCtrl'
 			}).
+			when('/cv', {
+				templateUrl: 'partials/resume.html',
+				controller: ''
+			}).
+			when('/resume', {
+				templateUrl: 'partials/resume.pdf',
+				controller: ''
+			}).
 			otherwise({
 				redirectTo: '/'
 			});

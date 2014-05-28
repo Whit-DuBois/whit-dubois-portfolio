@@ -7,6 +7,9 @@ html, body{
 a{
 	text-decoration: none;
 }
+a:hover {
+	text-decoration: underline;
+}
 a:hover{
 	text-shadow: 3px 3px 4px rgba(144, 185, 255, 0.71);
 }
@@ -22,12 +25,12 @@ ul, ol{
 h1{
 	padding: 0px;
 }
-h2, h4{
+h1, h2, h3, h4, h5{
 	font-family: "lighthouse";
 	text-shadow: 3px 3px 4px rgba(144, 185, 255, 0.71);
 }
 h3{
-	font-family: "Font";
+
 	margin-bottom: 0px;
 }
 .hide{
@@ -46,11 +49,9 @@ header h1{
 	display: inline-block;
 	padding-top: 15px;
 	margin-bottom: 5px;
-	font-family:"lighthouse";
 	font-size: 60px;
 	/*color: rgba(153, 0, 76, 1);*/
 	color: rgba(25, 25, 112, 1);
-	text-shadow: 3px 3px 4px rgba(144, 185, 255, 0.71);
 }
 
 /*MAIN NAV*/
@@ -166,7 +167,7 @@ header h1{
 .welcome-container aside{
 	position: fixed;
 	z-index: 999;
-	background:rgba(0,0,0, 0.4);
+	/*background:rgba(0,0,0, 0.4);*/
 	padding: 5px 15px 5px;
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
@@ -217,8 +218,7 @@ header h1{
 }
 .project-contain h3.project-name{
 	margin-top: 5px;
-	font-size: 17px;
-	font-weight: bold;
+	font-size: 22px;
 	margin-bottom: -5px;
 }
 .img-container{
@@ -307,6 +307,48 @@ button + button{
 	padding-bottom: 10px;
 }
 
+/*RESUME
+======*/
+.resume-container *{
+	padding: 0;
+	margin: 0;
+}
+.resume-container{
+	margin: 30px auto; 
+}
+.resume-container p{
+	margin: 0 0 20px 0;
+}
+.resume-container article{
+	margin: 0 0 25px 0;
+}
+.resume-container header, .resume-container h3, .resume-container .education{
+	text-align: center;
+}
+.resume-container h3{
+	margin: 0 0 15px 0;
+}
+.resume-container h4{
+	display: inline-block;
+}
+.resume-container h5{
+	font-size: 19px;
+}
+.resume-container span{
+	 font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	 font-size: 12px;
+	 padding: 0 0 0 10px;
+}
+.resume-container ul{
+	margin: 0 0 0 15px;
+}
+.resume-container ul li{
+	list-style: outside;
+}
+.resume-container .print{
+	position: absolute;
+	right: 0px;
+}
 
 /* #Media Queries
 ================================================== */
@@ -360,6 +402,16 @@ button + button{
 			overflow: hidden;
 			margin-left: 15px;
 		}
+
+		/*RESUME
+		=======*/
+		.resume-container .print{
+			display: none;
+			margin: 0 10px 0 0;
+		}
+		.resume-container h2{
+			font-size: 32px;
+		}
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -392,6 +444,9 @@ button + button{
 		}
 		.welcome-container aside h2{
 			font-size: 30px;
+		}
+		.resume-container h4{
+			display: block;
 		}
 	}
 

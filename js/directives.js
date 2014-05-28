@@ -50,9 +50,19 @@ myDirective.directive('showCaption', function () {
     };
 });
 
-// myDirective.directive('scrollTop', function(){
-//     return {
-//         restrict: 'C'.
-//         link: function (scope, element)
-//     }
-// })
+myDirective.directive('myYoutube', function($sce) {
+  return {
+    restrict: 'EA',
+    scope: { code:'=' },
+    replace: true,
+    template: '<div><iframe src="{{url}}" frameborder="0" allowfullscreen></iframe></div>',
+    link: function (scope) {
+        console.log('here');
+        scope.$watch('code', function (newVal) {
+           if (newVal) {
+               scope.url = $sce.trustAsResourceUrl("http://www.youtube.com/embed/" + newVal);
+           }
+        });
+    }
+  };
+});

@@ -26,7 +26,9 @@ myAppControllers.controller('projectDetailCtrl', ['$scope', '$routeParams', '$ht
         $http.get('js/projects/' + $routeParams.projectId + '.json').success(function (data) {
             $scope.project = data;
         });
-        console.log('projectDetailCtrl');
+
+        // $scope.code = "hrQP0m3JQwI";
+        $scope.project.url = $sce.trustAsResourceUrl(url);
     }
 ]);
 
